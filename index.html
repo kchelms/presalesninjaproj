@@ -3,143 +3,183 @@
 <head>
     <title>Pre-Sales Management Solution - Little Bits CSC 190</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
 </head>
 
 <body>
     <div id="navbar">
-
+        <a href="#header">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#background_info">Background</a>
+        <a href="#project_scope">Project Scope</a>
+        <a href="#proposed_solution">Proposed Solution</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#timeline">Timeline</a>
     </div>
-    <div id="header">
 
+    <div id="header">
         <div id="title">
             <h1>Pre-Sales Management Solution</h1>
             <h2>CSUS Computer Science Senior Project</h2>
         </div>
     </div>
+
     <div id="main_content">
-        <div id="overview">
-            <ul>
-                <li>
-                    <strong>Team name: </strong> Little Bits
-                </li>
-                <li>
-                    <strong>Team members: </strong> Alexander Alestra, Daniel Diep, Kendall Helms, Ye Yint Nay Htet,
-                        Matt Randell M. Mazon, Anuj Regmi, Timothy Thao
-                </li>
-                <li>
-                    <strong>Client: </strong> Mike Van Doren
-                </li>
-                <li>
-                    <strong>Advisor: </strong> Dr. Ahmed Salem
-                </li>
-            </ul>
+        <div id="overview" class="main_content_div">
+            <div>
+                <h2>Overview</h2>
+                <ul>
+                    <li>
+                        <strong>Team name: </strong> Little Bits
+                    </li>
+                    <li>
+                        <strong>Team members: </strong> Alexander Alestra, Daniel Diep, Kendall Helms, Ye Yint Nay Htet,
+                            Matt Randell M. Mazon, Anuj Regmi, Timothy Thao
+                    </li>
+                    <li>
+                        <strong>Client: </strong> Mike Van Doren
+                    </li>
+                    <li>
+                        <strong>Advisor: </strong> Dr. Ahmed Salem
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div id="background_info">
-            <h2>Background</h2>
+        <div id="background_info" class="main_content_div">
+            <div>
+                <h2>Background</h2>
 
-            <p>
-                Our client is Mike Van Doren, Chief Product Officer of Lipinski Web Design, which is in the business
-                of licensing enterprise software solutions.
-            </p>
+                <p>
+                    Our client is Mike Van Doren, Chief Product Officer of Lipinski Web Design, which is in the business
+                    of licensing enterprise software solutions.
+                </p>
 
-            <p>
-                For a  number of years, Mike has been aware of an unsolved problem in the software sales field.
-                There currently exists no integrated solution for management of the pre-sales workforce in enterprise
-                sales departments. Our client has asked us to develop this solution for his company to market.
-            </p>
+                <p>
+                    For a  number of years, Mike has been aware of an unsolved problem in the software sales field.
+                    There currently exists no integrated solution for management of the pre-sales workforce in enterprise
+                    sales departments. Our client has asked us to develop this solution for his company to market.
+                </p>
 
-            <p>
-                In enterprise software marketing, the pre-sales team is responsible for demonstrating the software
-                which is being marketed. While working on a prospective sale, a sales representative may request the
-                services of the pre-sales team multiple times, and potentially for multiple products throughout the
-                process. There is currently no software solution on the market for the scheduling of these demonstrations
-                which meets the needs of our client.
-            </p>
+                <p>
+                    In enterprise software marketing, the pre-sales team is responsible for demonstrating the software
+                    which is being marketed. While working on a prospective sale, a sales representative may request the
+                    services of the pre-sales team multiple times, and potentially for multiple products throughout the
+                    process. There is currently no software solution on the market for the scheduling of these demonstrations
+                    which meets the needs of our client.
+                </p>
+            </div>
+        </div>  
+
+
+        <div id="project_scope" class="main_content_div">
+            <div>
+                <h2>Project Scope</h2>
+                <ul>
+                    <h3>This service must:</h3>
+                    <li>Allow sales representatives to request a pre-sales team member</li>
+                    <li>Allow pre-sales team management to schedule pre-sales operations</li>
+                    <li>Simplify selecting the most qualified pre-sales team member to work a given operation</li>
+                    <li>Track pre-sales team member customer relationships</li>
+                    <li>Obtain reporting on pre-sales metrics</li>
+                </ul>
+            </div>
         </div>
 
-        <div id="project_scope">
-            <h2>Project Scope</h2>
-            <ul>
-                <h3>This service must:</h3>
-                <li>Allow sales representatives to request a pre-sales team member</li>
-                <l1>Allow pre-sales team management to schedule pre-sales operations</l1>
-                <li>Simplify selecting the most qualified pre-sales team member to work a given operation</li>
-                <li>Track pre-sales team member customer relationships</li>
-                <li>Obtain reporting on pre-sales metrics</li>
-            </ul>
+        <div id="proposed_solution" class="main_content_div">
+            <div>
+                <h2>Proposed Solution</h2>
+                <p>
+                    This project aims to solve the client's problem by developing a web service which is integrated with
+                    Salesforce through an API. Our service will provide the logic for the various operations described in the
+                    project scope, and store related data into a database.
+                </p>
+            </div>
         </div>
 
-        <div id="proposed_solution">
-            <h2>Proposed Solution</h2>
-            <p>
-                This project aims to solve the client's problem by developing a web service which is integrated with
-                Salesforce through an API. Our service will provide the logic for the various operations described in the
-                project scope, and store related data into a database.
-            </p>
+        <div id="highlights" class="main_content_div">
+            <div>
+                <h2>Project Highlights</h2>
+                <ul>
+                    <li>
+                        There is currently no other product on the market which solves the problem which this project aims
+                        to solve.
+                    </li>
+                    <li>
+                        Building our database and logic into a standalone web service outside of Salesforce's ecosystem provides
+                        both modularity and scalability. This app should be compatible with any existing Salesforce org which
+                        by using only standard Salesforce objects, and exporting the logic and specifically related data
+                        to our own server.
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div id="highlights">
-            <h2>Project Highlights</h2>
-            <ul>
-                <li>
-                    There is currently no other product on the market which solves the problem which this project aims
-                    to solve.
-                </li>
-                <li>
-                    Building our database and logic into a standalone web service outside of Salesforce's ecosystem provides
-                    both modularity and scalability. This app should be compatible with any existing Salesforce org which
-                    by using only standard Salesforce objects, and exporting the logic and specifically related data
-                    to our own server.
-                </li>
-            </ul>
+        <div id="prototype" class="main_content_div"> 
+            <div>
+                <h2>Prototype</h2>
+                <div id="prototype_images">
+                    <img src="images/Screen Shot 2021-12-04 at 9.57.57 PM.png" onclick="showImage(1)">
+                    <img src="images/Screen Shot 2021-12-04 at 9.58.10 PM.png" onclick="showImage(2)">
+                    <img src="images/Screen Shot 2021-12-04 at 9.58.10 PM.png" onclick="showImage(3)">
+                    <img src="images/Screen Shot 2021-12-04 at 9.59.05 PM.png" onclick="showImage(4)">
+                    <img src="images/Screen Shot 2021-12-04 at 9.59.16 PM.png" onclick="showImage(5)">
+                    <img src="images/Screen Shot 2021-12-04 at 9.59.28 PM.png" onclick="showImage(6)">
+                </div>
+            </div>
         </div>
 
-        <div id="prototype">
-            <h2>Prototype</h2>
-            <img src="images/Screen Shot 2021-12-04 at 9.57.57 PM.png">
-            <img src="images/Screen Shot 2021-12-04 at 9.58.10 PM.png">
-            <img src="images/Screen Shot 2021-12-04 at 9.58.10 PM.png">
-            <img src="images/Screen Shot 2021-12-04 at 9.59.05 PM.png">
-            <img src="images/Screen Shot 2021-12-04 at 9.59.16 PM.png">
-            <img src="images/Screen Shot 2021-12-04 at 9.59.28 PM.png">
-        </div>
-
-        <div id="timeline">
-            <ul>
-                <li>
-                    <h3>Sprint 1</h3>
-                    <p>
-                        We had our first team meeting with the client, and developed a business event table and context
-                        diagram for the project.
-                    </p>
-                </li>
-                <li>
-                    <h3>Sprint 2</h3>
-                    <p>
-                        We developed a prototype UI in Figma, and reviewed it with our client. Screenshots of the prototype
-                        are displayed above.
-                    </p>
-                </li>
-                <li>
-                    <h3>Sprint 3</h3>
-                    <p>
-                        We developed a proof of concept for all technologies we anticipate using in developing this project.
-                        Altogether we created a basic Salesforce Lightning application, a Django backend application,
-                        and a SSO login page written using Angular.js.
-                    </p>
-                </li>
-                <l1>
-                    <h3>Sprint 4</h3>
-                    <p>
-                        This was our first development iteration. We produced a very basic skeleton Salesforce Lighting
-                        application which provides a pre-sales request form, and sends an http POST request with the information
-                        collected in the form. We also developed a Django application and database with the bare-minimum
-                        information contained in a pre-sales request.
-                    </p>
-                </l1>
-            </ul>
+        <div id="timeline"ß class="main_content_div">
+            <div>
+                <h2>Project Timeline</h2>
+                <ul>
+                    <li>
+                        <h3>Sprint 1</h3>
+                        <p>
+                            We had our first team meeting with the client, and developed a business event table and context
+                            diagram for the project.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Sprint 2</h3>
+                        <p>
+                            We developed a prototype UI in Figma, and reviewed it with our client. Screenshots of the prototype
+                            are displayed above.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Sprint 3</h3>
+                        <p>
+                            We developed a proof of concept for all technologies we anticipate using in developing this project.
+                            Altogether we created a basic Salesforce Lightning application, a Django backend application,
+                            and a SSO login page written using Angular.js.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Sprint 4</h3>
+                        <p>
+                            This was our first development iteration. We produced a very basic skeleton Salesforce Lighting
+                            application which provides a pre-sales request form, and sends an http POST request with the information
+                            collected in the form. We also developed a Django application and database with the bare-minimum
+                            information contained in a pre-sales request.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <div id="footer"></div>
+
+    <div id="full_size_images" onclick="hideImage()">
+        <img id="img_1" src="images/Screen Shot 2021-12-04 at 9.57.57 PM.png">
+        <img id="img_2" src="images/Screen Shot 2021-12-04 at 9.58.10 PM.png">
+        <img id="img_3" src="images/Screen Shot 2021-12-04 at 9.58.10 PM.png">
+        <img id="img_4" src="images/Screen Shot 2021-12-04 at 9.59.05 PM.png">
+        <img id="img_5" src="images/Screen Shot 2021-12-04 at 9.59.16 PM.png">
+        <img id="img_6" src="images/Screen Shot 2021-12-04 at 9.59.28 PM.png">
+    </div>           
 </body>
 </html>

@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'Rubik';
+	src: url('fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'Ruda';
+	src: url('fonts/Ruda/Ruda-VariableFont_wght.ttf');
+}
+
+body {
+	background-image: url('sawyer-bengtson-al7RodWPrM4-unsplash.jpg');
+	background-size: 100% auto;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: Rubik;
+	font-weight: lighter; 
+}
+
+#header {
+	padding: 25vh 0;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	width: 100%;
+	background: #D47272;
+	opacity: .8;
+	display: flex;
+	justify-content: right;
+	gap: 1em;
+}
+
+#navbar a {
+	color: white;
+	text-shadow: 1px 1px 5px gray;
+	text-decoration: none;
+}
+
+#title {
+	text-align: center;
+	margin: 15vh;
+	color: white;
+}
+
+#title h1 {
+	font-size: 4em;
+	font-family: Rubik;
+	font-weight: lighter;
+}
+
+h2, h3 {
+	font-family: Ruda;
+	color: #A4A3A3;
+}
+
+#title h2 {
+	color: #D47272;
+}
+
+.main_content_div {
+	background: #FFFBEE;
+	padding: 15vh 5vw 25vh 5vw;
+	margin: auto;
+	margin-bottom: 40vh;
+	font-size: 1.5em;
+	max-width: 1500px;
+}
+
+
+#prototype_images {
+	padding: 1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 2em;
+}
+
+#prototype img {
+	min-width: 20%;
+	max-width: 30%;
+	height: auto;
+	box-shadow: 3px 3px 6px gray;
+}
+
+#full_size_images {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+#full_size_images img {
+	position: fixed;
+	max-width: 80%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+
+#timeline li {
+	list-style: none;
+	background-color: white;
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+	padding: 1em;
+	gap: 1em;
+	box-shadow: 1px 1px 5px gray;
+}
+
+#timeline li>h3 {
+	background: #D47272;
+	color: white;
+	white-space: nowrap;
+	text-align: center;
+	padding: 1em;
+	border-radius: 150px
+}
